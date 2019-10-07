@@ -1,0 +1,10 @@
+<% if @name %>
+<h1>Hi <%= @name %>! The game has started!
+  <br> Choose: paper, rock or scissors.</h1>
+<% end %>
+
+<form action = '/step2' method = 'post'>
+  <label for = "move">Move</label>
+ <input type = "text" name="choice"></input>
+ <input type = "submit" value = "Submit"></input>
+  </form>
